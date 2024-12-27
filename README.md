@@ -37,13 +37,8 @@
 <h3 align="center">LearnToCloud Journey Repository - Public</h3>
 
   <p align="center">
-    Root repository for all things Azure.
+    My public repository documenting the journey through resources available on https://learntocloud.guide
     <br />
-    <a href="https://github.com/UKIkarus/LearnToCloud"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/UKIkarus/LearnToCloud">View Demo</a>
-    ·
     <a href="https://github.com/UKIkarus/LearnToCloud/issues">Report Bug</a>
     ·
     <a href="https://github.com/UKIkarus/LearnToCloud/issues">Request Feature</a>
@@ -80,7 +75,7 @@
 
 <!--[![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-Welcome to my LearnToCloud journey! This repository serves as a comprehensive documentation of my progress through the resources available at [LearnToCloud Guide](https://learntocloud.guide). It is designed for both personal recollection and accountability.  
+Welcome to my LearnToCloud journey! This repository serves as a comprehensive documentation of my progress through the resources available at [LearnToCloud Guide](https://learntocloud.guide), it is designed for both personal recollection and accountability.  
 
 I invite you to explore this repository and join me on this exciting journey to mastering cloud technologies. Your feedback and constructive criticism are highly appreciated as I strive to deepen my understanding of the tools and practices essential for cloud computing.  
 
