@@ -34,14 +34,14 @@
 
   <h3 align="center">LearnToCloud Journey Repository - Public</h3>
 
-  <p align="center">
-    A public repository aimed at documenting my progress through the cloud training resources available at [LearnToCloud Guide](https://learntocloud.guide).
+<p align="center">
+    A public repository aimed at documenting my progress through the cloud training resources available at <a href="https://learntocloud.guide">LearnToCloud.Guide</a>.
     <br />
     <br />
     <a href="https://github.com/UKIkarus/LearnToCloud/issues">Report Bug</a>
     ·
     <a href="https://github.com/UKIkarus/LearnToCloud/issues">Request Feature</a>
-  </p>
+</p>
 </div>
 <br />
 <br />
@@ -85,7 +85,7 @@ Feel free to dive in and give it a try yourself!
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get started with LearnToCloud and the resources made available on their website, I highly recommend reading through their "Getting Started" page, which you can find here - [LearnToCloud Guide](https://learntocloud.guide/). All the tools required to go through the labs and challenges are available there.
+To get started with LearnToCloud and the resources made available on their website, I highly recommend reading through their "Getting Started" page, which you can find here - [LearnToCloud Guide](https://learntocloud.guide/), all the tools required to go through the labs and challenges are available there.
 
 <!-- ROADMAP -->
 ## Roadmap
