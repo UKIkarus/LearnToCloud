@@ -8,8 +8,6 @@
 *** Thanks again! Now go create something AMAZING! :D
 -->
 
-
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -25,27 +23,28 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/UKIkarus/LearnToCloud">
-    <img src="images/logo.png" alt="Logo" width="320">
+    <img src="https://raw.githubusercontent.com/learntocloud/learn-to-cloud/refs/heads/main/img/cropped.svg" alt="Logo" width="480">
   </a>
+<br />
+<br />
 
-<h3 align="center">LearnToCloud Journey Repository - Public</h3>
+  <h3 align="center">LearnToCloud Journey Repository - Public</h3>
 
   <p align="center">
-    My public repository documenting the journey through resources available on https://learntocloud.guide
+    A public repository aimed at documenting my progress through the cloud training resources available at [LearnToCloud Guide](https://learntocloud.guide).
+    <br />
     <br />
     <a href="https://github.com/UKIkarus/LearnToCloud/issues">Report Bug</a>
     ·
     <a href="https://github.com/UKIkarus/LearnToCloud/issues">Request Feature</a>
   </p>
 </div>
-
-
+<br />
+<br />
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -56,12 +55,7 @@
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -75,25 +69,23 @@
 
 <!--[![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-Welcome to my LearnToCloud journey! This repository serves as a comprehensive documentation of my progress through the resources available at [LearnToCloud Guide](https://learntocloud.guide), it is designed for both personal recollection and accountability.  
+Welcome to my LearnToCloud journey! This repository serves as a comprehensive documentation of my progress through the resources available at [LearnToCloud Guide](https://learntocloud.guide). It is designed for both personal recollection and accountability.
 
-I invite you to explore this repository and join me on this exciting journey to mastering cloud technologies. Your feedback and constructive criticism are highly appreciated as I strive to deepen my understanding of the tools and practices essential for cloud computing.  
+I invite you to explore this repository and join me on this exciting journey to mastering cloud technologies. Your feedback and constructive criticism are highly appreciated as I strive to deepen my understanding of the tools and practices essential for cloud computing.
 
-Feel free to dive in and give it a try yourself!  
-
+Feel free to dive in and give it a try yourself!
 
 ### Built With
 
 - Git
 - Azure-CLI
 - Visual Studio Code
-
+- Markdown (Still learning!)
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
 To get started with LearnToCloud and the resources made available on their website, I highly recommend reading through their "Getting Started" page, which you can find here - [LearnToCloud Guide](https://learntocloud.guide/). All the tools required to go through the labs and challenges are available there.
-
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -105,8 +97,6 @@ To get started with LearnToCloud and the resources made available on their websi
 
 See the [open issues](https://github.com/UKIkarus/LearnToCloud/issues) for a full list of proposed features (and known issues).
 
-
-
 <!-- CONTRIBUTING -->
 ## Contributing
 
@@ -114,8 +104,7 @@ Contributions are what make the open source community such an amazing place to l
 
 While this repository is primarily for keeping myself accountable and journaling my progress, I welcome any contributions that may allow myself and others on a similar journey to grow their skillset.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -123,15 +112,12 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-
 <!-- CONTACT -->
 ## Contact
 
 Daryl Howard - [My LinkedIn Profile][linkedin-url]
 
 Project Link: [https://github.com/UKIkarus/LearnToCloud](https://github.com/UKIkarus/LearnToCloud)
-
-
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
@@ -141,19 +127,17 @@ Project Link: [https://github.com/UKIkarus/LearnToCloud](https://github.com/UKIk
 * [LearnToCloud - Discord Server](https://discord.gg/M3jQbSfVpN)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/UKIkarus/Azure.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/UKIkarus/LearnToCloud.svg?style=for-the-badge
 [contributors-url]: https://github.com/UKIkarus/LearnToCloud/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/UKIkarus/Azure.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/UKIkarus/LearnToCloud.svg?style=for-the-badge
 [forks-url]: https://github.com/UKIkarus/LearnToCloud/network/members
-[stars-shield]: https://img.shields.io/github/stars/UKIkarus/Azure.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/UKIkarus/LearnToCloud.svg?style=for-the-badge
 [stars-url]: https://github.com/UKIkarus/LearnToCloud/stargazers
-[issues-shield]: https://img.shields.io/github/issues/UKIkarus/Azure.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/UKIkarus/LearnToCloud.svg?style=for-the-badge
 [issues-url]: https://github.com/UKIkarus/LearnToCloud/issues
-[license-shield]: https://img.shields.io/github/license/UKIkarus/Azure.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/UKIkarus/LearnToCloud.svg?style=for-the-badge
 [license-url]: https://github.com/UKIkarus/LearnToCloud/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/daryl-howard
