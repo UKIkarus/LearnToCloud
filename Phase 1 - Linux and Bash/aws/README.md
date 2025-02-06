@@ -39,7 +39,7 @@ Follow these steps to set up and access your CTF lab environment:
     When prompted, type `yes` to confirm.
 
 5. After the apply completes, note the `ctf_instance_public_ip` output. You'll use this to connect to your lab environment.
-![Terrform Apply output](./images/terraform-apply-screenshot.png)
+![Terraform Apply output](./images/terraform-apply.png)
 
 ## Accessing the Lab Environment
 
@@ -48,26 +48,12 @@ To access your lab environment:
 1. Use SSH to connect to the EC2 instance:
 
     ``` sh
-      ssh ec2-user@<ctf_instance_public_ip>
+      ssh ctf_user@<ctf_instance_public_ip>
     ```
 
 2. When prompted for a password, enter: `CTFpassword123!`
 3. Once logged in, you'll see a welcome message with instructions for your first challenge.
 ![ssh into the instance](./images/ssh-screenshot.png)
-
-## Challenges
-
-Your CTF lab consists of 7 challenges, each testing different Linux command line skills. The challenges are:
-
-1. Find a hidden file
-2. Locate a file with "secret" in its name
-3. Find the largest file in a specific directory
-4. Identify a user with a specific UID
-5. Locate a file with specific permissions
-6. Find a process running on a specific port (you need to install the tools like `netstat`)
-7. Decode a base64 encoded message
-
-Work through these challenges to improve your command line skills and find all the flags!
 
 ## Cleaning Up
 
