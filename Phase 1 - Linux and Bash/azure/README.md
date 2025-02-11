@@ -64,6 +64,7 @@ To access your lab environment:
     ``` sh
     ssh ctf_user@<public_ip_address>
     ```
+    
 
 2. When prompted for a password, enter: `CTFpassword123!`
 3. Once logged in, you'll see a welcome message with instructions for your first challenge.
