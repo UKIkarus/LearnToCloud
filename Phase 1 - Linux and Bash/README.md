@@ -108,8 +108,10 @@ Configure SSH key authentication and find a hidden flag.
 5. Take notes on new commands you discover
 
 ## Author
+- LinkedIn: [rishabkumar7](https://linkedin.com/in/rishabkumar7) - Original Author of the content
+- X/Twitter: [@rishabincloud](https://x.com/rishabincloud) - Original Author of the content
 
-- LinkedIn: [rishabkumar7](https://linkedin.com/in/rishabkumar7)
-- X/Twitter: [@rishabincloud](https://x.com/rishabincloud)
+- LinkedIn: [UKIkarus](https://uk.linkedin.com/in/daryl-howard) - Link with me here
+- Blog: [Howardlabs](https://howardlabs.co.uk) - My blog (WIP)
 
 ## [License](LICENSE)
