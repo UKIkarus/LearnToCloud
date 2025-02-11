@@ -1,6 +1,9 @@
 > [!IMPORTANT] 
 > By continuing beyond this point, you acknowledge and understand that this document contains spoilers which may otherwise ruin your experience.
 
+<details>
+  <summary>Click to reveal spoilers</summary>
+
 # My Attempts at Phase 1: Linux Command Line CTF Challenge
 
 This document details my journey through the Phase 1 Linux Command Line CTF Challenge. Each challenge has been a learning experience, and I hope my notes and solutions can help others on their path.
@@ -148,3 +151,5 @@ These challenges provided an engaging and interactive way to enhance my Linux co
 > ✓ Correct flag for Challenge 8!  
 Flags Found: 8/8 Congratulations!  
 You've completed all challenges!
+
+</details>
