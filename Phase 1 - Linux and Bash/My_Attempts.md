@@ -1,3 +1,6 @@
+> [!IMPORTANT] 
+> By continuing beyond this point, you acknowledge and understand that this document contains spoilers which may otherwise ruin your experience.
+
 # My Attempts at Phase 1: Linux Command Line CTF Challenge
 
 This document details my journey through the Phase 1 Linux Command Line CTF Challenge. Each challenge has been a learning experience, and I hope my notes and solutions can help others on their path.
