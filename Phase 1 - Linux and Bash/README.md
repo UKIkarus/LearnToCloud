@@ -3,13 +3,9 @@
 This set of progressive Capture The Flag (CTF) challenges will test your Linux command line skills. Each challenge builds upon previous concepts while introducing new ones. All flags follow the format `CTF{some_text_here}`.
 
 > [!IMPORTANT]  
-> Please complete [Phase 1 Guide](https://learntocloud.guide/phase1/) before attempting these challenges. Do not share solutions publicly - focus on sharing your learning journey instead.
-
-<pre>
-You can find my personal attempts at tackling these challenges, where I have documented my opinions and findings, <a href="https://github.com/UKIkarus/LearnToCloud/blob/main/Phase%201%20-%20Linux%20and%20Bash/My_Attempts.md">By clicking here.</a>
-
-<span style="color: red; font-weight: bold;">WARNING - My notes contain spoilers which may ruin the experience for you, proceed with caution, by continuing past this point you acknowledge that you understand and you will only be cheating yourself otherwise!</span>
-</pre>
+> Please complete [Phase 1 Guide](https://learntocloud.guide/phase1/) before attempting these challenges. Do not share solutions publicly - focus on sharing your learning journey instead.  
+>You can find my personal attempts at tackling these challenges, where I have documented my opinions and findings, <a href="https://github.com/UKIkarus/LearnToCloud/blob/main/Phase%201%20-%20Linux%20and%20Bash/My_Attempts.md">By clicking here.</a><br><br>
+WARNING - My notes contain spoilers which may ruin the experience for you, proceed with caution, by continuing past this point you acknowledge that you understand and you will only be cheating yourself otherwise!
 
 ## Flag Submission
 
