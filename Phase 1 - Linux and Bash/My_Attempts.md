@@ -41,7 +41,7 @@ find /home/ctf_user -name "*secret*"
 cat ./documents/projects/backup/secret_notes.txt
 ```
 
-**Notes**: The `find` command is powerful for searching files based on various criteria.
+**Notes**: The `find` command is powerful for searching files based on various criteria, you can use it to locate files with specific permissions, specific owners, specific filenames, it even allows users to execute commands against each returned result, mastering the `find` command will make navigating Linux environments much easier.
 
 ## Challenge 3: The Largest Log
 
@@ -152,4 +152,48 @@ These challenges provided an engaging and interactive way to enhance my Linux co
 Flags Found: 8/8 Congratulations!  
 You've completed all challenges!
 
+**Tools and commands used**
+
+- `cd` - Change directory is a command used to switch the current working directory to another within the terminal.  
+  **Benefits/Use Cases**: Essential for navigating the file system, allowing users to move between directories to access files and execute commands in different locations.
+
+- `ls` - Short for "List" is used to list the contents of a directory, including files and sub-directories.  
+  **Benefits/Use Cases**: Useful for viewing the contents of a directory, checking for the presence of files, and understanding the structure of the file system. Parameters like `-a` (show all files, including hidden ones) enhance its functionality further.
+
+- `find` - A command allowing users to search for files or folders on the device.
+  **Benefits/Use Cases**: Extremely versatile for locating files and folders based on various criteria like name, size, modification date, owner, and permissions. It can also be used to automatically perform further actions on the found files.  
+
+- `grep` - Global Regular Expression Print is used to search for specific patterns within files and allows for utilising regex.  
+  **Benefits/Use Cases**: Powerful for searching text within files, filtering output, and finding specific information. It supports regular expressions for advanced search patterns. In our example we used "grep" to search for the term "1002" to identify which user had this UID on the system.
+
+- `tail` - The tail command is used to read and return a specific number of lines from the end of a file.  
+  **Benefits/Use Cases**: Since files come in varying sizes, the tail command is absolutely essential for quickly viewing the last few lines of a file, an example in this case would be a large log file which could otherwise flood the screen with information, fill the output buffer or cause the machine to otherwise hang if trying to print the entirety to the terminal.
+
+- `cat` - The concatenate command is used to read, display and combine the content of files.  
+  **Benefits/Use Cases**: Useful for quickly viewing the contents of a file without opening it in an editor. It can also concatenate multiple files and display their combined contents, often used alongside pipes to pass the contents of a file into another command/utility for further processing/manipulation.
+
+- `base64` - A command built into the linux commandline to encode and decode data using Base64 encoding.  
+  **Benefits/Use Cases**: Useful for encoding binary data into text format for safe transmission or storage. It can also decode Base64-encoded data back to its original form.
+
+- `netstat` - Network statistics command is used to display network connections, routing tables, and interface statistics.  
+  **Benefits/Use Cases**: Useful for monitoring network connections, diagnosing network issues, and understanding network activity on a system. A network administrator might use `netstat` to check for open ports and active connections on a server to ensure there are no unauthorized access points or services listening for connections.
+
+- `curl` - Command-line tool for transferring data with URLs.  
+  **Benefits/Use Cases**: Versatile for making HTTP requests, downloading files, and interacting with web APIs. It supports various protocols and options for customizing requests, in this example we used it to make a request to the service running on port 8080.
+
+- `lsof` - List open files command is used to display information about files opened by processes.  
+  **Benefits/Use Cases**: Useful for identifying which processes are using specific files or network ports, helping diagnose issues related to file usage or network connections, in this example we used it to determine what process was listening on port 8080.
+
+- `ssh-keygen` - Generate an SSH key pair.  
+  **Benefits/Use Cases**: Essential for creating SSH keys for secure authentication to remote servers also allowing for passwordless authentication.
+
+- `ssh-copy-id` - Install your public key in a remote machine's authorized_keys.  
+  **Benefits/Use Cases**: Simplifies the process of copying your public key to a remote server for SSH key-based authentication, this will require authentication initially, but will allow for password-less access to the device using RSA keys for future connections.
+
+- `ssh` - Secure Shell is used to securely connect to a remote machine over a network.  
+  **Benefits/Use Cases**: Essential for remote administration, allowing users to execute commands on remote servers securely. It supports key-based authentication for enhanced security, this was the primary means of connecting to our remote CTF virtual machine for this challenge, all commands were run from the VM itself via a remote session using SSH.
+
+- `sudo` - Superuser do is a command that allows a permitted user to execute a command as the superuser or another user, as specified by the security policy.  
+  **Benefits/Use Cases**: Essential for performing administrative tasks that require elevated privileges. It ensures that only authorized users can execute commands that could affect the system's configuration or security. In this challenge we used "sudo" in order to access another users home-directory and read the ".profile" contents.
+  
 </details>
