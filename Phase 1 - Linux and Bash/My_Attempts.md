@@ -142,14 +142,79 @@ cat /home/ctf_user/.ssh/secrets/backup/.authorized_keys
 
 **Notes**: It may not have been necessary to create the RSA key and login via this method, however, I wanted to show I knew how to create and upload the key, after logging in, I checked the users ".ssh" folder and found that there was a "Secrets" and "Backup" folder which seemed unusual since "authorized_keys" and "known_hosts" usually reside here, browsing through these folders and displaying the contents of ".authorized_keys" showed the final flag.
 
+## Challenge 9: DNS troubleshooting
+
+**Description**: Someone modified a critical DNS configuration file. Fix it to reveal the flag.
+
+**Date of Attempt**: 02/03/2025
+
+**Approach**: DNS resolution in linux is usually managed by resolved and references a file called "resolv.conf" which resides in /etc/, this would be the first thing to check for DNS issues to determine the nameservers being used and see if they are valid/reachable.
+
+**Solution**:
+```sh
+cat /etc/resolv.conf # Notice the nameserver line with the CTF flag breaking the nameserver definition.
+sudo nano /etc/resolv.conf #Open nano editor to repair the config (though you could use vi or other options) save the changes.
+sudo systemctl restart systemd-resolved # Restart the resolved daemon to have it use the repaired configuration
+```
+
+**Notes**: Resolv.conf is an important configuration file when it comes to defining nameservers for DNS lookups, this should be the first thing to check when experiencing issues with DNS and resolving hostnames.
+
+## Challenge 10: Remote upload
+
+**Description**: Transfer any file to the ctf_challenges directory to trigger the flag.
+
+**Date of Attempt**: 02/03/2025
+
+**Approach**: Use `scp` from my own local device to securely copy a file from the local machine to the remote server, since we already have SSH access to the remote system, scp can be used to securly copy the contents of a file to the remote system from our own.
+
+**Solution**:
+```sh
+scp ./HelloWorld.txt ctf_user@4.234.106.243:/home/ctf_user/ctf_challenges/ # From my own local device.
+```
+
+**Notes**: The scp command uses SSH to transfer files securely between the local machine and the remote server. Ensure you have the correct permissions to write to the target directory on the remote server and use the syntax as per the solution "scp Local_Path User@Host:RemotePath" in this challenge a script is configured to broadcast a message when a file was uploaded which presented itself to my SSH session with the flag using the "wall" command. 
+
+## Challenge 11: Web Configuration
+
+**Description**: The web server is running on a non-standard port. Find and fix it.
+
+**Date of Attempt**: 02/03/2025
+
+**Approach**: Since the readme indicates that the webserver is running via Nginx and makes reference to its configuration files, I will check the configuration file to determine which port is being used for the service, adjust it and restart the service to use the correct port.
+
+**Solution**:
+```sh
+ls /etc/nginx/sites-available/ # View available sites
+sudo nano /etc/nginx/sites-available/default # Edit the config file and save from port 8083 to 80
+sudo systemctl restart nginx # Restart the nginx webserver so that it now runs on the correct port.
+curl http://127.0.0.1 # Make a simple http request on port 80 to the localhost IP which returned the contents of the index file containing the flag!
+```
+
+**Notes**: The port being used was not the standard port used for HTTP traffic, though other ports can be used for webservers, users would have to specify the port in their browser in order to navigate to it correctly, upon finding the incorrect port in the config file we changed it back to the default for HTTP of "80" and restarted the service, we can then make a request to the system on port 80 and view the results.
+
+## Challenge 12: Network Traffic Analysis
+
+**Description**: Someone is sending secret messages via ping packets.
+
+**Date of Attempt**: 02/03/2025
+
+**Approach**: We know from the description that someone is sending ping packets to our server and that they are using ping or ICMP for this, so we need to analyze the traffic being sent by using a tool suitable for this, "TCPDump" allows us to capture packets being sent to our server and analyze them further.
+
+**Solution**:
+```sh
+sudo tcpdump -i any icmp -A -c 10 # tcpdump, any interface, filter for ICMP packets, convert output to ASCII and only capture 10 packets.
+```
+
+**Notes**: At first I was struggling to find packets which made sense and no ICMP packets were being found, then I realized that I had not specified the "All" interfaces flag and tried again, this gave me some results, seeing as the flag is going to be text based, I used the "-A" flag to convert the results to display as ASCII and then found the flag being sent.
+
 ---
 
 **Key Takeaway**:
 
 These challenges provided an engaging and interactive way to enhance my Linux command line skills. The difficulty level is suitable for entry-level Linux users and covers a range of tools and features that a cloud engineer may encounter. A few twists and turns such as nested Base64 encoding kept things interesting and challenge a users ability to think outside the box. I look forward to continuing my learning journey and tackling more advanced challenges in the future.
 
-> ✓ Correct flag for Challenge 8!  
-Flags Found: 8/8 Congratulations!  
+> ✓ Correct flag for Challenge 12!  
+Flags Found: 12/12 Congratulations!  
 You've completed all challenges!
 
 **Tools and commands used**
@@ -195,5 +260,19 @@ You've completed all challenges!
 
 - `sudo` - Superuser do is a command that allows a permitted user to execute a command as the superuser or another user, as specified by the security policy.  
   **Benefits/Use Cases**: Essential for performing administrative tasks that require elevated privileges. It ensures that only authorized users can execute commands that could affect the system's configuration or security. In this challenge we used "sudo" in order to access another users home-directory and read the ".profile" contents.
-  
+
+- `systemctl` - A command to examine and control the systemd system and service manager.
+  **Benefits/Use Cases**: Essential for managing system services, including starting, stopping, restarting, and checking the status of services. In Challenge 9, it was used to restart the `systemd-resolved` service, it was also used in challenge 11 to restart the nginx service once the port was updated.
+
+- `scp` - Secure copy command is used to copy files between hosts on a network.
+  **Benefits/Use Cases**: Useful for securely transferring files between local and remote systems over SSH. In Challenge 10, it was used to upload a file to the remote server.
+
+- `nano` - A simple text editor for Unix-like systems.
+  **Benefits/Use Cases**: Useful for editing configuration files directly from the terminal. In Challenge 9 and 11, it was used to edit configuration files, though vi or any other editors could have been used in its place.
+
+- `tcpdump` - A command-line packet analyzer.
+  **Benefits/Use Cases**: Useful for capturing and analyzing network traffic. In Challenge 12, it was used to capture and analyze ICMP packets to find the flag, very useful when wanting a low level view of what is being sent and received across your network.
+
+- `wall` - A command to send a message to all logged-in users.
+  **Benefits/Use Cases**: Useful for broadcasting messages to all users currently logged in on the system. In Challenge 10, I believe it was used to notify users when a new file was added to the `ctf_challenges` directory based on the response that appeared after I sent a file using SCP, thus I added it here for reference.
 </details>

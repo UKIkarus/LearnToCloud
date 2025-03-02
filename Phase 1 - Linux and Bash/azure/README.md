@@ -64,7 +64,6 @@ To access your lab environment:
     ``` sh
     ssh ctf_user@<public_ip_address>
     ```
-    
 
 2. When prompted for a password, enter: `CTFpassword123!`
 3. Once logged in, you'll see a welcome message with instructions for your first challenge.
@@ -72,7 +71,7 @@ To access your lab environment:
 
 ## Cleaning Up
 
-When you're done with the lab, don't forget to destroy the AWS resources to avoid unnecessary charges:
+When you're done with the lab, don't forget to destroy the Azure resources to avoid unnecessary charges:
 
 `terraform destroy`
 
